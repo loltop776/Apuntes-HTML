@@ -1,14 +1,83 @@
-# Apuntes HTML
+# Apuntes
 
 ## Indice
 
-[· Fichero HTML](./README.md#fichero-html "Fichero html")
+[· GITHUB](README.md#github "GITHUB")
 
-[· Etiquetas](./README.md#etiquetas "Etiquetas")
+[· HTML](./README.md#html "HTML")
 
-[· Etiquetas para body](./README.md#etiquetas-para-body "Etiquetas para body")
+## GITHUB
 
-## Fichero HTML
+Para empezar, debemos saber que **GITHUB** es una herramienta para la realización de **backups** de tu web o programa.
+
+Nos podemos conectar a él mediante el **inicio de sesión** en él y la **creación de repositorios**, ¿cómo podemos conectarnos a un repositorio? Primero habrá que **crearlo**. Si vamos a Nuestro Perfil > Tus repositorios, podremos ver esta interfaz:
+
+!["Imagen de la interfaz GITHUB"](./img/interfaz_github.png "Imagen de la interfaz GITHUB")
+
+Podemos ver que a la parte superior derecha tenemos un botón en verde **new**. Clicamos en él para crear un **repositorio**.
+
+!["Boton new"](./img/boton_new.png "Boton new")
+
+Al clicar en él, veremos que nos aparece un formulario para rellenar diferentes datos. No centraremos en **Owner**, **Repository name**, **Description**, **Public or Private** y **Add a README file**.
+
+!["Creacion rep"](./img/creacion_rep.png "Creacion rep")
+
+| Propiedad | Descripción |
+|:-------------------------:|:----------------------------------------------------------------:|
+| **Owner** | Es el creador/propietario del repositorio |
+| **Repository name** | Es el nombre que le asignas al repositorio |
+| **Description** | La descripción del repositorio |
+| **Public or Private** | Si quieres tener el repositorio en público o privado |
+| **Add a README file** | Esta opción es recomendable siempre asignarla para la implementación de una estructura e información sobre tu repositorio |
+
+[<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
+
+
+### Comandos GIT
+
+Una vez creado el repositorio tenemos que conectarnos a él. Para ello abriremos el **CMD** dónde esté la carpeta que queremos subir y digitaremos ``git init`` para incorporar la herramienta **git**.
+
+!["Git init"](./img/git_init.png "Git init")
+
+Primero revisaremos la rama en la que estamos utilizando ``git branch``. 
+
+!["Git branch"](./img/git_branch.png "Git branch")
+
+Si queremos cambiar de rama por dónde subir los cambios deberíamos digitar ``git branch -M (rama)``.
+
+!["Git branch 2"](./img/git_branch_2.png "Git branch 2")
+
+Después, clonaremos la carpeta al repositorio, para ello digitaremos ``git clone (url del repositorio)``.
+
+!["Git clone"](./img/git_clone.png "Git clone")
+
+Ahora, empezaremos con la subida de **archivos**, digitaremos ``git add "(ruta o nombre de los arhivos)``, esto añadirá todos los archivos que queremos subir.
+
+!["Git add"](./img/git_add.png "Git add")
+
+Seguidamente, avanzaremos con los **commits**, o para entendernos, los backups. Digitaremos ``git commit -m "(nombre del backup)"``.
+
+!["Git commit"](./img/git_commit.png "Git commit")
+
+Para finalizar, digitamos ``git push origin (rama)`` para la subida de **backups** a **GITHUB**.
+
+!["Git push"](./img/git_push.png "Git push")
+
+[<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
+
+### Otros comandos
+
+| Comando | Trata de |
+|:-------------------------:|:----------------------------------------------------------------:|
+| ``git --version`` | Saber la versión de **GIT** |
+| ``git config --global username "(usuario)"`` | Sincronizar carpetas locales a tu usuario de **GITHUB** |
+| ``git config --global useremail "(correo)"`` | Sincronizar carpetas locales a tu correo de **GITHUB** |
+
+[<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
+
+## HTML
+
+### Fichero HTML
 Primero de todo, para crear un archivo **html** necesitamos una extension llamada **.html**. En cualquier fichero podemos cambiar la extensión a, por ejemplo: ```index.html```.
 
 ![Imagen de fichero html](./img/ficherohtml.png "Imagen del fichero html")
@@ -38,7 +107,7 @@ Podemos introducir toda esta línea automáticamente con ```html:5``` y presiona
 
 [<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
 
-## Etiquetas
+### Etiquetas
 
 Nos fijeramos en las etiquetas mostradas en el anterior ejemplo y empezaremos por ```<!DOCTYPE>``` y su atributo ```html```, la etiqueta indica que tipo de formato tiene el documento y su atributo especifica su lenguaje.
 
@@ -118,7 +187,7 @@ Para finalizar, veremos que existe una etiqueta ```<body>(contenido legible por 
 
 [<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
 
-## Etiquetas para body
+### Etiquetas para body
 
 | Etiqueta | Descripción |
 |:-------------------------:|:----------------------------------------------------------------:|
