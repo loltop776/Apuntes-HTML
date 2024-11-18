@@ -4,6 +4,8 @@
 
 [· GITHUB](README.md#github "GITHUB")
 
+[· MARKDOWN](README.md#markdown "MARKDOWN")
+
 [· HTML](./README.md#html "HTML")
 
 ## GITHUB
@@ -74,6 +76,48 @@ Para finalizar, digitamos ``git push origin (rama)`` para la subida de **backups
 | ``git config --global useremail "(correo)"`` | Sincronizar carpetas locales a tu correo de **GITHUB** |
 
 [<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
+
+## MARKDOWN
+
+Para empezar, debemos saber que un fichero de tipo **MARKDOWN** acaba en ``.md``. En este podemos digitar una serie de combinaciones para hacer una descripción más visual. Por ejemplo, este documento está siendo escrito en un fichero de tipo **MARKDOWN**.
+
+!["MARKDOWN"](./img/readme.png "MARKDOWN")
+
+Al entrar en un documento ``.md`` podremos hacer una serie de combinaciones.
+
+Primero empezaremos por los encabezados.
+
+```
+    #Encabezado nivel 1
+
+    ## Encabezado nivel 2
+
+    ### Encabezado nivel 3
+
+    #### Encabezado nivel 4
+
+    ##### Encabezado nivel 5
+
+    ###### Encabezado nivel 6
+```
+
+Cada encabezado tiene su perspectivo tamaño de letra según su nivel.
+
+!["Encabezado"](./img/encabezados.png "Encabezado")
+
+Continuamos con los enlaces, haremos un enlace con:
+
+``["Nombre del enlace"]((dirección/ruta del enalce) "Nombre que aparece al tener el ratón encima")``
+
+Seguidamente, tenemos las imágenes, las cuales dispondremos de ellas mediante:
+
+``!["Nombre de la imagen"]((dirección/ruta de la imagen) "Nombre que aparece al tener el ratón encima")``
+
+También, dentro del **MARKDOWN** podemos utilizar etiquetas de **html**.
+
+```html
+    <p> Hola </p>
+```
 
 ## HTML
 
