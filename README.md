@@ -262,9 +262,9 @@ Leyenda:
 
 En ``html`` puedes crear un "esqueleto" del contenido de la web mediante etiquetas enfocadas para ello.
 
-    · **<section>** -> Este crea una sección(bloque) de contenido genérico, para organizar la posición del contenido.
+· **<section>** -> Este crea una sección(bloque) de contenido genérico, para organizar la posición del contenido.
 
-    · **<article>** -> Crea una sección de un contenido en específico, por ejemplo:
+· **<article>** -> Crea una sección de un contenido en específico, por ejemplo:
 
 ``` html
 
