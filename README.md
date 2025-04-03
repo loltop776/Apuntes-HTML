@@ -3,12 +3,18 @@
 ## Indice
 
 [· GITHUB](README.md#github "GITHUB")
+    [· Comandos GIT](README.md#comandos-git "Comandos GIT")
+    [· Otros comandos](README.md#comandos-git "Otros comandos")
 
 [· MARKDOWN](README.md#markdown "MARKDOWN")
 
-[· HTML](./README.md#html "HTML")
+[· HTML](README.md#html "HTML")
+    [· Fichero HTML](README.md#fichero-html "Fichero HTML")
+    [· Etiquetas Generales](README.md#etiquetas-generales "Etiquetas Generales")
+    [· Etiquetas para body](README.md#etiquetas-para-body "Etiquetas para body")
+    [· Bloques de contenido](README.md#bloques-de-contenido "Bloques de contenido")
 
-[· CSS](./README.md#css "CSS")
+[· CSS](README.md#css "CSS")
 
 ## GITHUB
 
