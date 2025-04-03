@@ -8,6 +8,8 @@
 
 [· HTML](./README.md#html "HTML")
 
+[· CSS](./README.md#css "CSS")
+
 ## GITHUB
 
 Para empezar, debemos saber que **GITHUB** es una herramienta para la realización de **backups** de tu web o programa.
@@ -152,7 +154,7 @@ Podemos introducir toda esta línea automáticamente con ```html:5``` y presiona
 
 [<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
 
-### Etiquetas
+### Etiquetas Generales
 
 Nos fijeramos en las etiquetas mostradas en el anterior ejemplo y empezaremos por ```<!DOCTYPE>``` y su atributo ```html```, la etiqueta indica que tipo de formato tiene el documento y su atributo especifica su lenguaje.
 
@@ -252,6 +254,46 @@ Para finalizar, veremos que existe una etiqueta ```<body>(contenido legible por 
 Leyenda:
 
 · ``*``: Número del 1-6.
+
+
+[<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
+
+### Bloques de contenido
+
+En ``html`` puedes crear un "esqueleto" del contenido de la web mediante etiquetas enfocadas para ello.
+
+    · **<section>** -> Este crea una sección(bloque) de contenido genérico, para organizar la posición del contenido.
+
+    · **<article>** -> Crea una sección de un contenido en específico, por ejemplo:
+
+``` html
+
+    <!-- Creas una sección dónde organizas el contenido, cada sección se puede caracterizar como a un tema diferente -->
+    <section>
+
+        <!-- Aquí añades un artículo para el texto -->
+        <article>
+
+            <p> Algo de texto </p>
+
+        </article>
+
+        <!-- Y aquí añades un artículo para la imagen -->
+        <article>
+
+            <img href="../img/ejemplo.png" alt="No se ha podido cargar la imagen">
+        
+        </article>
+
+    </section> 
+
+    <!-- Sirve para pura organización del contenido y un diseño más estructurado. A la hora de cambiar y rediseñar la web es más sencillo -->
+```
+## CSS
+
+
+
+
 
 
 [<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
