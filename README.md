@@ -2,19 +2,19 @@
 
 ## Indice
 
-[· GITHUB](README.md#github "GITHUB")
-    [· Comandos GIT](README.md#comandos-git "Comandos GIT")
-    [· Otros comandos](README.md#comandos-git "Otros comandos")
+[GITHUB](README.md#github "GITHUB") <br>
+- [Comandos GIT](README.md#comandos-git "Comandos GIT")
+- [Otros comandos](README.md#comandos-git "Otros comandos")
 
-[· MARKDOWN](README.md#markdown "MARKDOWN")
+[MARKDOWN](README.md#markdown "MARKDOWN")
 
-[· HTML](README.md#html "HTML")
-    [· Fichero HTML](README.md#fichero-html "Fichero HTML")
-    [· Etiquetas Generales](README.md#etiquetas-generales "Etiquetas Generales")
-    [· Etiquetas para body](README.md#etiquetas-para-body "Etiquetas para body")
-    [· Bloques de contenido](README.md#bloques-de-contenido "Bloques de contenido")
+[HTML](README.md#html "HTML")
+- [Fichero HTML](README.md#fichero-html "Fichero HTML")
+- [Etiquetas Generales](README.md#etiquetas-generales "Etiquetas Generales")
+- [Etiquetas para body](README.md#etiquetas-para-body "Etiquetas para body")
+- [Bloques de contenido](README.md#bloques-de-contenido "Bloques de contenido")
 
-[· CSS](README.md#css "CSS")
+[CSS](README.md#css "CSS")
 
 ## GITHUB
 
@@ -268,9 +268,9 @@ Leyenda:
 
 En ``html`` puedes crear un "esqueleto" del contenido de la web mediante etiquetas enfocadas para ello.
 
-· **<section>** -> Este crea una sección(bloque) de contenido genérico, para organizar la posición del contenido.
+· ```<section>``` -> Este crea una sección(bloque) de contenido genérico, para organizar la posición del contenido.
 
-· **<article>** -> Crea una sección de un contenido en específico, por ejemplo:
+· ```<article>``` -> Crea una sección de un contenido en específico, por ejemplo:
 
 ``` html
 
@@ -295,6 +295,47 @@ En ``html`` puedes crear un "esqueleto" del contenido de la web mediante etiquet
 
     <!-- Sirve para pura organización del contenido y un diseño más estructurado. A la hora de cambiar y rediseñar la web es más sencillo -->
 ```
+
+· ```<span>``` -> Para seleccionar texto específico.
+
+``` html
+
+    <!-- Aquí seleccionas el texto que quieres editar y diseñar.-->
+    <p> Esto <span>es un texto de</span> ejemplo. </p>
+
+
+```
+
+· ```<table>``` -> Para aplicar tablas en el **html**.
+
+``` html
+
+    <table>
+
+        <!-- Encabezado de la tabla -->
+        <thead>
+
+            <th>
+                Encabezado
+            </th>
+
+        </thead>
+
+        <!-- Fila de la tabla -->
+        <tr>
+
+            <td>
+                Ejemplo
+            </td>
+
+        </tr>
+
+    </table>
+
+```
+
+
+
 ## CSS
 
 
