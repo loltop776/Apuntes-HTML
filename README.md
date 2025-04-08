@@ -2,7 +2,7 @@
 
 ## Indice
 
-[GITHUB](README.md#github "GITHUB") <br>
+[GITHUB](README.md#github "GITHUB") 
 - [Comandos GIT](README.md#comandos-git "Comandos GIT")
 - [Otros comandos](README.md#comandos-git "Otros comandos")
 
@@ -13,8 +13,12 @@
 - [Etiquetas Generales](README.md#etiquetas-generales "Etiquetas Generales")
 - [Etiquetas para body](README.md#etiquetas-para-body "Etiquetas para body")
 - [Bloques de contenido](README.md#bloques-de-contenido "Bloques de contenido")
+- [Tablas](README.md#tabla "Tabla")
 
 [CSS](README.md#css "CSS")
+- [¿Qué és?](README.md#qué-és "¿Qué és?")
+- [Ubicación del css](README.md#ubicación-del-css "Ubicación del css")
+- [Sintaxis básica](README.md#sintaxis-básica "Sintaxis básica")
 
 ## GITHUB
 
@@ -44,6 +48,7 @@ Al clicar en él, veremos que nos aparece un formulario para rellenar diferentes
 
 
 ### Comandos GIT
+<hr>
 
 Una vez creado el repositorio tenemos que conectarnos a él. Para ello abriremos el **CMD** dónde esté la carpeta que queremos subir y digitaremos ``git init`` para incorporar la herramienta **git**.
 
@@ -76,6 +81,7 @@ Para finalizar, digitamos ``git push origin (rama)`` para la subida de **backups
 [<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
 
 ### Otros comandos
+<hr>
 
 | Comando | Trata de |
 |:-------------------------:|:----------------------------------------------------------------:|
@@ -131,6 +137,7 @@ También, dentro del **MARKDOWN** podemos utilizar etiquetas de **html**.
 ## HTML
 
 ### Fichero HTML
+<hr>
 Primero de todo, para crear un archivo **html** necesitamos una extension llamada **.html**. En cualquier fichero podemos cambiar la extensión a, por ejemplo: ```index.html```.
 
 ![Imagen de fichero html](./img/ficherohtml.png "Imagen del fichero html")
@@ -161,6 +168,7 @@ Podemos introducir toda esta línea automáticamente con ```html:5``` y presiona
 [<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
 
 ### Etiquetas Generales
+<hr>
 
 Nos fijeramos en las etiquetas mostradas en el anterior ejemplo y empezaremos por ```<!DOCTYPE>``` y su atributo ```html```, la etiqueta indica que tipo de formato tiene el documento y su atributo especifica su lenguaje.
 
@@ -241,6 +249,7 @@ Para finalizar, veremos que existe una etiqueta ```<body>(contenido legible por 
 [<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
 
 ### Etiquetas para body
+<hr>
 
 | Etiqueta | Descripción |
 |:-------------------------:|:----------------------------------------------------------------:|
@@ -265,6 +274,7 @@ Leyenda:
 [<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
 
 ### Bloques de contenido
+<hr>
 
 En ``html`` puedes crear un "esqueleto" del contenido de la web mediante etiquetas enfocadas para ello.
 
@@ -333,14 +343,242 @@ En ``html`` puedes crear un "esqueleto" del contenido de la web mediante etiquet
     </table>
 
 ```
+[<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
 
+### Tabla
+<hr>
 
+Se utilizan diferentes etiquetas para realizar una tabla. Aplicaremos la etiqueta ```<table>``` para formatear una tabla, seguidamente, dispondremos de los ``<thead>`` para marcar el encabezado de la tabla. Después, utilizaremos el ``<tfoot>`` para aplicar un pie de página a la tabla. Finalmente, dispondremos del contenido principal que los haremos mediante filas ``<tr>``.
+
+```html
+
+<table>
+
+    <!-- Estructura de la tabla -->
+
+    <thead>
+        <!-- Contenido del encabezado -->
+    </thead>
+
+    <tr>
+        <!-- Contenido central -->
+    </tr>
+
+    <tfoot>
+        <!-- Contenido del pie de la tabla -->
+    </tfoot>
+
+</table>
+
+```
+
+Dentro de estas etiquetas que son para estructurar una tabla, dispondremos de varias etiquetas que representan las celdas de cada fila. Se utiliza ``<td>`` y ``<th>``. El ``<td>`` sirve para aplicar celdas normales y el ``<th>`` para encabezados y pies de página.
+
+``` html
+
+<table>
+
+    <!-- Estructura de la tabla -->
+
+    <thead> 
+        <!-- Encabezado -->
+        <th>
+            <p> Ejemplo de encabezado. </p>
+        </th>
+    </thead>
+
+    <tr>
+        <!-- Primera fila -->
+        <td>
+            <!-- Primera celda -->
+            <p> Primera celda de la primera fila. </p>
+        </td>
+        <td>
+            <!-- Segunda celda -->
+            <p> Segunda celda de la primera fila. </p>
+        </td>
+    </tr>
+
+    <tr>
+        <!-- Segunda fila -->
+        <td>
+            <!-- Primera celda -->
+            <p> Primera celda de la segunda fila. </p>
+        </td>
+    </tr>
+
+    <tfoot>
+        <!-- Pie de tabla -->
+        <th>
+            <p> Ejemplo de pie de tabla. </p>
+        </th>
+    </tfoot>
+
+</table>
+
+```
+
+[<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
 
 ## CSS
 
+### Qué és
+<hr>
 
+Es una hoja de estilos que sirve para aplicarle una mayor apariencia a tu página web, esto hace que los usuarios capten mejor la información y sea muy agradable visualmente, para así aumentar los usuarios a tu web y que tu servicio se vea claro y atractivo.
 
-
+!["Tesla"](./img/tesla.png "Tesla")
 
 
 [<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
+
+### Ubicación del CSS
+<hr>
+
+Para aplicar estilo a tu página necesitarás la ubicación de una hoja de estilos, para ello existen **3 formas** de poder implementar en tu web un estilo.
+
+1. Mediante la etiqueta ``<style>``. (Interno)
+
+Este se implementa dentro del archivo en el ``<head>``, podemos aplicar varios estilos dentro de él.
+
+``` html
+
+<head>
+<style>
+
+h2, h1{ /* Encabezados */
+    color: #FF0000;
+    font-style: italic;
+    font-size: 40px;
+}
+
+p{ /* Párrafo */
+    color: #0000FF;
+}
+
+.footer { /* Pie de página */
+
+    color: black;
+
+}
+
+</style>
+</head>
+
+```
+
+![CSS_ejemplo_style](./img/css_ejemplo_style.png "CSS_ejemplo_style")
+
+
+2. Mediante asignación del ``<style>`` en la propia etiqueta. (Inline)
+
+Puedes aplicar estilo a una etiqueta en concreto.
+
+``` html
+
+<!-- Le aplicamos estilo al párrafo -->
+<p style="color:blue;"> Este párrafo se verá en rojo. </p>
+
+```
+![css_ejemplo_style_etiqueta](./img/css_ejemplo_style_etiqueta.png "css_ejemplo_style_etiqueta")
+
+3. Mediante una hoja de estilos externo **.css** enlazado con el archivo. (Externo)
+
+Se puede aplicar un archivo externo para una mayor organización del trabajo.
+
+``` html
+
+<head>
+
+    <!-- Para enlazar al archivo css -->
+    <link rel="stylesheet" href="./estilos/estilo_ejemplo.css">
+
+</head>
+
+```
+
+[<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
+
+### Sintaxis básica
+<hr>
+
+#### Selectores de hijos
+<hr>
+
+Sirven para seleccionar un elemento hijo, es decir, al seleccionar una clase, id o etiqueta este puede llegar a contener dentro otras etiquetas, clases o ids. Para gestionar mejor la organización del **css**, puedes implementar la característica ``.clase_padre > .clase_hijo{}``. Con esto estás especificando que el elemento **DIRECTO** interno se verá afectado.
+
+``` css
+
+.padre{
+
+    color: red;
+
+}
+
+.padre > h2{
+
+    color:blue;
+
+}
+
+```
+
+En este ejemplo estás especificando que todos los ``<h2>`` de la clase **padre** se formatearán de color azul, mientras que la clase **padre** se formatea de color rojo.
+
+[<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
+
+#### Selectores de hermanos adyacentes
+<hr>
+
+Aquellos que son posteriores de la etiqueta seleccionada. Estos se especifican con un ``+``, por ejemplo:
+
+``` html
+
+<!-- HTML -->
+
+<h1> Primer título </h1>
+
+<h2> Hermano adyacente del primer título </h2>
+
+```
+``` css
+
+/* CSS */
+
+h1+h2{
+
+    color: red;
+
+}
+
+```
+
+Podemos saber que la etiqueta ``<h2>`` adyacente (contínuo) a la etiqueta ``<h1>`` se formateará de color **rojo**.
+
+#### Pseudoclases
+<hr>
+
+Estos son definiciones de los estilos, estos especifican el estado del elemento. Por ejemplo:
+
+1. **:link**: El estado por defecto de los enlaces.
+2. **:visited**: Enlaces que ya se han visitado.
+3. **:focus**: Elementos que contienen el cursor en su interior.
+4. **:hover**: Elementos que tienen en ese momento el cursor por encima.
+
+#### Pseudoelementos
+<hr>
+
+Añaden estilos a una parte concreta del elemento, por ejemplo:
+
+``` css
+
+    /* La primera línea de la estiqueta <p> es de color rojo */
+    p::first-line{
+
+        color:red;
+
+    }
+
+```
+
+
