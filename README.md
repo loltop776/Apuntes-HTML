@@ -4,21 +4,28 @@
 
 [GITHUB](README.md#github "GITHUB") 
 - [Comandos GIT](README.md#comandos-git "Comandos GIT")
-- [Otros comandos](README.md#comandos-git "Otros comandos")
+- [Otros comandos](README.md#comandos-git "Otros comandos") <br>
 
 [MARKDOWN](README.md#markdown "MARKDOWN")
 
 [HTML](README.md#html "HTML")
 - [Fichero HTML](README.md#fichero-html "Fichero HTML")
+- [Rutas](README.md#rutas "Rutas")
 - [Etiquetas Generales](README.md#etiquetas-generales "Etiquetas Generales")
 - [Etiquetas para body](README.md#etiquetas-para-body "Etiquetas para body")
 - [Bloques de contenido](README.md#bloques-de-contenido "Bloques de contenido")
-- [Tablas](README.md#tabla "Tabla")
+- [Tablas](README.md#tabla "Tabla") <br>
 
 [CSS](README.md#css "CSS")
 - [¿Qué és?](README.md#qué-és "¿Qué és?")
+- [¿Con que funciona?](README.md#con-qué-funciona "¿Con qué funciona?")
 - [Ubicación del css](README.md#ubicación-del-css "Ubicación del css")
 - [Sintaxis básica](README.md#sintaxis-básica "Sintaxis básica")
+- [Composición: display flex](README.md#composición-display-flex "Composición: display flex") <br>
+
+[MEDIA QUERIES](README.md#media-queries "MEDIA QUERIES")
+- [¿Para qué sriven?](README.md#para-qué-sirven "¿Para qué sirven?")
+- [¿Cómo utilizarlo?](README.md#cómo-utilizarlo "¿Cómo utilizarlo?")
 
 ## GITHUB
 
@@ -164,6 +171,55 @@ Para empezar un **html** abreiremos el archivo y introducimos las siguientes lí
 ```
 
 Podemos introducir toda esta línea automáticamente con ```html:5``` y presionar **Enter**.
+
+[<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
+
+### Rutas
+<hr>
+
+En HTML se utilizan rutas para acceder a diferentes elementos, archivos, imágenes...
+
+Existen dos tipos de ruta:
+
+1. **Relativa**: Aquella que cuenta desde tu posición actual.
+2. **Absoluta**: Aquellas que parte desde la raíz.
+
+Por ejemplo:
+
+**Estructura de carpetas**
+
+
+EJ1 <br>
+-> IMG <br>
+EJ2 <br>
+-> 'POSICIÓN ACTUAL' <br>
+
+
+``` html
+
+<body>
+
+    <!-- Ruta relativa -->
+    <img src="../EJ1/IMG/img.png">
+
+    <!-- Ruta absoluta -->
+    <img src="/EJ1/IMG/img.png">
+</body>
+
+```
+
+Las rutas **relativas** se componen de:
+
+1. ``..`` -> Para retroceder de directorio.
+2. ``/archivo_o_directorio`` -> Seleccionar el archivo o directorio.
+3. ``.`` -> Para moverte al mismo nivel en el que te encuentras.
+
+Y, por último, las rutas **absolutas** se componen de:
+
+1. ``/`` -> Raíz acompañado de:
+   1. ``/archivo_o_directorio`` -> Seleccionar el archivo o directorio.
+
+``/directiorio1/archivo.html``
 
 [<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
 
@@ -432,6 +488,35 @@ Es una hoja de estilos que sirve para aplicarle una mayor apariencia a tu págin
 
 [<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
 
+### Con qué funciona
+<hr>
+
+Esta hoja de estilos funciona mediante **clases**, **identificadores** y el resto son parámetros para aplicar a esas **clases**, **etiquetas** e **identificadores**.
+
+``` css
+
+.clase{
+
+    /* Parámetros */
+
+}
+
+#id {
+
+    /* Parámetros */
+
+}
+
+etiqueta{
+
+    /* Parámetros */
+
+}
+
+```
+
+[<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
+
 ### Ubicación del CSS
 <hr>
 
@@ -477,7 +562,7 @@ Puedes aplicar estilo a una etiqueta en concreto.
 ``` html
 
 <!-- Le aplicamos estilo al párrafo -->
-<p style="color:blue;"> Este párrafo se verá en rojo. </p>
+<p style="color:blue;"> Este párrafo se verá en azul. </p>
 
 ```
 ![css_ejemplo_style_etiqueta](./img/css_ejemplo_style_etiqueta.png "css_ejemplo_style_etiqueta")
@@ -555,6 +640,8 @@ h1+h2{
 
 Podemos saber que la etiqueta ``<h2>`` adyacente (contínuo) a la etiqueta ``<h1>`` se formateará de color **rojo**.
 
+[<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
+
 #### Pseudoclases
 <hr>
 
@@ -564,6 +651,8 @@ Estos son definiciones de los estilos, estos especifican el estado del elemento.
 2. **:visited**: Enlaces que ya se han visitado.
 3. **:focus**: Elementos que contienen el cursor en su interior.
 4. **:hover**: Elementos que tienen en ese momento el cursor por encima.
+
+[<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
 
 #### Pseudoelementos
 <hr>
@@ -581,4 +670,208 @@ Añaden estilos a una parte concreta del elemento, por ejemplo:
 
 ```
 
+[<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
+
+### Composición: display flex
+<hr>
+
+#### ¿Qué és?
+<hr>
+
+Es un método para adaptar toda la estructura de contenedores y objetos a una mejor visualización del mismo, también, el **display**, se utiliza para organizar el contenido dependiendo del dispositivo que esté visualizando el contenido, por ejemplo:
+
+· No se lo mismo ver 4 contenedores grandes en un ordenador que en un teléfono móvil.
+
+Por eso mismo se utiliza el ``display: block`` y el ``display: flex``.
+
+[<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
+
+#### Utilidad
+<hr>
+
+Al querer estructurar una página, es muy atractivo ver todos los contenedores con un estilo llamativo, grande y ver todo el contenido en un momento.
+
+A partir de ese punto podemos utilizar el **display**.
+
+Hagamos un ejemplo. Si yo quisiera que desde una pantalla de ordenador se viesen 4 contenedores juntos, pero en el teléfono móvil 2 arriba y 2 abajo, debería de utilizar el **display: flex** acompañado seguidamente de un ``@media screen (max-width: 700px, /*por ejemplo*/)``, el cuál dentro dispondrá de un **display: block**. La estructura será la siguiente:
+
+``` html
+
+<!-- HTML -->
+
+<section class="display"> <!-- Aquí aplicaremos el display flex o block, dependiendo del ancho de pantalla -->
+    <section class="block_1">
+        <!-- Primera sección, la cuál ocupará un 50%, al aplicar el ancho de pantalla determinado ocupará el 100% -->
+        <!-- Cada uno de estos artículos ocuparán el 50% de la sección -->
+        <article>
+            <p> Primer bloque <p>
+        </article>
+        <article>
+            <p> Segundo bloque <p>
+        </article>
+
+    </section>
+    <section class="block_2">
+        <!-- Segunda sección, la cuál ocupará otro 50%, al aplicar el ancho de pantalla determinado ocupará el 100% -->
+        <!-- Cada uno de estos artículos ocuparán el 50% de la sección -->
+        <article>
+            <p> Primer bloque <p>
+        </article>
+        <article>
+            <p> Segundo bloque <p>
+        </article>
+
+    </section>
+</section>
+```
+
+``` css
+/* CSS */
+
+.display{
+
+    /* Aplicamos el 100% del espacio en el section del display */
+    width: 100%;
+    display: flex;
+    /* Añadimos el display flex que combina las dos secciones en una misma fila */
+
+}
+
+/* Aplicamos que los dos bloques ocupan el 50% del ancho de página, ya que, los dos están en la misma fila */
+.block_1, .block_2{
+
+    width: 50%;
+
+}
+
+/* Aplicamos que dentro de cada articulo que se situe en estos bloques, como son dos, que contengan el 50% cada uno */
+.block_1 > article, .block_2 > article{
+
+    width: 50%;
+
+}
+
+/* MEDIA QUERIES */
+/* Cuando el dispositivo ocupe 700px de ancho: */
+@media screen (max-width: 700px){
+
+    .display{
+
+        /* Hacemos que todos los bloques estén separados, cada uno por su lado, ahora se dividen en dos filas
+        
+        SECTION 1
+        SECTION 2
+
+        */
+        display: block;
+
+    }
+
+    /* Ya que, están separados, les decimos que ocupen el 100%, así aprovechamos toda la fila */
+    .block_1, .block_2{
+
+        width: 100%;
+
+    }
+
+}
+
+
+```
+
+[<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
+
+#### Propiedades
+<hr>
+
+Hay diferentes propiedades y configuraciones del propio **display**, estos son:
+
+1. ``flex-direction:``.
+   1. ``row``: Aplica los objetos en fila / línea.
+   2. ``row-reverse``: Aplica los objetos en fila / línea a la inversa.
+   3. ``column``: En columna.
+   4. ``column-reverse``: En columna a la inversa.
+2. ``flex-wrap:``.
+   1. ``no-wrap``: Ningún cambio.
+   2. ``wrap``: El contenido que no quepa se desplaza hacia abajo.
+   3. ``wrap-reverse``: El contenido que no quepa se desplaza hacia arriba.
+3. ``justify-content:``.
+   1. ``flex-start``: La disposición del contenido empieza al principio.
+   2. ``flex-end``: La dispisicón del contenido empieza al final.
+   3. ``center``: La disposición del contenido se sitúa en el centro.
+   4. ``space-between``: Añade espaciados entre los elementos proporcional a la amplitud de la página.
+   5. ``space-around``: Este aplica espaciado de la mitad de un elemento y del otro.
+   6. ``space-evenly``: Aplica espaciado proporcional a la amplitud de la página (incluyendo el espaciado del borde).
+4. ``align-items:``.
+   1. ``flex-start``: Distribuye el contenido arriba de todo.
+   2. ``flex-end``: Distribuye el contenido al final de todo.
+   3. ``center``: Distribuye el contenido al centro.
+   4. ``stretch``: Distribuye el contenido en toda la longitud permitida.
+5. ``align-content:``.
+   1. ``flex-start``: La disposición del contenido empieza al principio.
+   2. ``flex-end``: La dispisicón del contenido empieza al final.
+   3. ``center``: La disposición del contenido se sitúa en el centro.
+   4. ``stretch``: Aplica el contenido del centro más estrecho para su visualización correcta.
+   5. ``space-between``: Este aplica espaciado de la mitad de una fila y de otra.
+   6. ``space-around``: Aplica espaciado proporcional a la longitud de la página (incluyendo el espaciado del borde).
+
+[<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
+
+
+## Media queries
+
+### Para qué sirven
+<hr>
+
+Controlan la amplitud del dispositivo que esté navegando por la web. Cada dispositivo tiene una amplitud y altitud diferente y todo el contenido puede verse afectado, por ello existen las **media queries**.
+
+[<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
+
+### Cómo utilizarlo
+<hr>
+
+Primero de todo, deberás utilizar una **hoja de estilos** dónde ahí, podrás aplicar todos los estilos de todos los elementos. En ese mismo archivo aplicarás las **media queries** que se definen de la siguiente manera:
+
+``` css
+
+@media screen (max-width: /* Píxeles de la pantalla */){
+
+    /* Elementos y parámetros que quieres cambiar */
+
+}
+
+```
+
+Si hemos aplicado estilos para una pantalla **1920px** y queremos aplicarlo a un teléfono móvil, podremos aplicarlo mediante la amplitud marcada por **píxeles**.
+
+``` css
+
+@media screen (max-width: 700px){ /* Simulación de teléfono móvil */
+
+    /* Cuando se aplique la norma de 700px de amplitud, toda la página será de color rojo */
+    body{
+
+        color: red;
+
+    }
+
+    /* Cambiamos su tamaño a 100% y su tamaño de letra para que se vea más encajado en el dispositivo */
+    .block1{
+
+        width: 100%;
+        font-size: 20px;
+
+    }
+
+    .block2{
+
+        width: 100%;
+        font-size: 10px;
+
+    }
+
+}
+
+```
+[<button> Volver a inicio </button>](./README.md#indice "Volver a inicio")
 
