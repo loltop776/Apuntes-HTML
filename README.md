@@ -24,7 +24,7 @@
 - [Composición: display flex](README.md#composición-display-flex "Composición: display flex") <br>
 
 [MEDIA QUERIES](README.md#media-queries "MEDIA QUERIES")
-- [¿Para qué sriven?](README.md#para-qué-sirven "¿Para qué sirven?")
+- [¿Para qué sirven?](README.md#para-qué-sirven "¿Para qué sirven?")
 - [¿Cómo utilizarlo?](README.md#cómo-utilizarlo "¿Cómo utilizarlo?")
 
 ## GITHUB
